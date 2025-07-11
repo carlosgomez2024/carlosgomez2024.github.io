@@ -16,3 +16,13 @@ canvas {
   transform: translateY(-50%);
   pointer-events: none;
 }
+.texto2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  transform: translateY(20%);
+  pointer-events: none;
+}
