@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+canvas {
+  display: block;
+}
+.texto {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
