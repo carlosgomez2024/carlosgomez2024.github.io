@@ -1,0 +1,23 @@
+DEDICATORIA PARA MI FRESITA
+===========================
+
+Archivos (todos sueltos, sin carpetas)
+  index.html    La página
+  style.css     Colores, tipografías y animaciones
+  script.js     Estrellas, universo, música y corazones
+  cancion.mp3   Suena desde que entra a la página
+  saturno.mp3   Suena solo dentro de "Ver el universo" (nunca a la vez)
+  fresita.jpg   La foto de ella
+
+Cómo cambiar la foto
+  Reemplaza fresita.jpg por otra foto con el mismo nombre exacto
+  (si no está, la página muestra un corazón en su lugar).
+  Se recomienda una foto vertical (tipo 4:5) y que pese menos de 1 MB.
+
+Cómo cambiar los textos
+  Todo el texto está en index.html (la carta, las razones y el final).
+  Las frases del universo están en script.js, en la lista "var frases".
+
+Para compartirla (GitHub Pages)
+  Sube solo estos archivos a la raíz del repositorio, luego en
+  Settings > Pages elige la rama main y la carpeta / (root).

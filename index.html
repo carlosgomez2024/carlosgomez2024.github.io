@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Para ti, mi fresita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Jost:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Pinyon+Script&display=swap">
+  <link rel="stylesheet" href="style.css?v=11">
+</head>
+<body>
+
+<div class="luna" aria-hidden="true"></div>
+<canvas id="lienzo" aria-hidden="true"></canvas>
+
+<div class="pagina">
+  <header class="portada">
+    <svg class="corazon" viewBox="-4 -4 108 118" role="img" aria-label="Una fresa">
+      <g class="pulso">
+        <path pathLength="1" d="M50 104 C20 90 6 64 12 42 C16 28 32 24 50 30 C68 24 84 28 88 42 C94 64 80 90 50 104 Z"/>
+        <ellipse cx="34" cy="52" rx="1.6" ry="2.6"/>
+        <ellipse cx="50" cy="48" rx="1.6" ry="2.6"/>
+        <ellipse cx="66" cy="52" rx="1.6" ry="2.6"/>
+        <ellipse cx="28" cy="68" rx="1.6" ry="2.6"/>
+        <ellipse cx="42" cy="66" rx="1.6" ry="2.6"/>
+        <ellipse cx="58" cy="66" rx="1.6" ry="2.6"/>
+        <ellipse cx="72" cy="68" rx="1.6" ry="2.6"/>
+        <ellipse cx="38" cy="82" rx="1.6" ry="2.6"/>
+        <ellipse cx="52" cy="80" rx="1.6" ry="2.6"/>
+        <ellipse cx="64" cy="82" rx="1.6" ry="2.6"/>
+        <ellipse cx="50" cy="94" rx="1.6" ry="2.6"/>
+        <path class="hoja" pathLength="1" d="M50 30 C44 20 32 18 22 24 C32 26 42 28 50 30 C58 28 68 26 78 24 C68 18 56 20 50 30 Z"/>
+        <path class="tallo" pathLength="1" d="M50 30 C50 22 52 16 56 10"/>
+      </g>
+    </svg>
+    <h1>Esto es para ti, mi fresita</h1>
+    <p class="lede">Contigo quiero quedarme, hoy y para siempre.</p>
+  </header>
+
+  <section class="foto-escena" aria-label="Tu foto">
+    <div class="escena" id="escena">
+      <div class="orbita" aria-hidden="true"></div>
+      <div class="orbita dos" aria-hidden="true"></div>
+      <div class="sombra-piso" aria-hidden="true"></div>
+      <div class="inclinar" id="inclinar">
+        <div class="tarjeta" id="tarjeta">
+          <div class="cara frente" id="frente">
+            <div class="retrato">
+              <img id="foto" src="fresita.jpg" alt="Mi fresita" onerror="this.hidden=true">
+              <svg class="retrato-corazon" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 85 C10 55 0 35 0 22 C0 8 12 0 25 0 C37 0 46 7 50 16 C54 7 63 0 75 0 C88 0 100 8 100 22 C100 35 90 55 50 85 Z"/></svg>
+            </div>
+            <p class="pie-foto">Mi fresita</p>
+          </div>
+          <div class="cara atras" id="atras">
+            <svg class="atras-destello" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 C13 8 16 11 24 12 C16 13 13 16 12 24 C11 16 8 13 0 12 C8 11 11 8 12 0 Z"/></svg>
+            <p class="atras-frase" id="atras-frase">Mis momentos más bonitos son a tu lado, mi fresita</p>
+            <span class="atras-firma">Con cariño</span>
+          </div>
+          <div class="piezas" id="piezas" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="chispas" id="chispas" aria-hidden="true"></div>
+    </div>
+    <p class="foto-texto">Enamoraste a un chico de corazón de pollito, y espero que lo quieras tanto como él te quiere a ti 🐥</p>
+    <button class="btn btn-grande btn-latir" type="button" data-abrir-universo>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.2"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-28 12 12)"/></svg>
+      <span>Presiona aquí</span>
+    </button>
+  </section>
+
+  <main>
+    <article class="carta">
+      <div class="cuerpo">
+        <p>Hay personas que llegan sin avisar y cambian todo para bien ✨ Así llegaste tú, mi fresita 🍓, y desde entonces mis días se sienten más bonitos 🌷</p>
+        <p>Me gusta cómo sonríes, cómo me escuchas y cómo me amas 🥹 A tu lado, hasta lo más simple se convierte en un bonito momento 🤍</p>
+        <p>Me haces muy feliz, y no quería quedarme con eso guardado 💌 Me siento muy feliz a tu lado 🌙</p>
+        <p>Gracias por existir, mi fresita 🍓, por abrazar mi corazón tan bonito y por ser ese lugar donde siempre quiero estar 💗</p>
+      </div>
+
+      <div class="firma">
+        <span class="con">Con mucho cariño,</span>
+        <span class="nombre">De alguien que no deja de pensarte 🫶</span>
+      </div>
+    </article>
+
+    <section class="motivos" aria-labelledby="t-motivos">
+      <h2 id="t-motivos">Lo que me gusta <span class="junto">de ti 💕</span></h2>
+      <div class="rejilla">
+        <div class="motivo">
+          <h3>Tu sonrisa 😊</h3>
+          <p>Es lo primero que me viene a la mente cuando pienso en ti ✨</p>
+        </div>
+        <div class="motivo">
+          <h3>Tu forma de ser conmigo 🤗</h3>
+          <p>A tu lado puedo ser yo mismo, sin fingir nada 🤍</p>
+        </div>
+        <div class="motivo">
+          <h3>Tu forma de amarme 💗</h3>
+          <p>Hace que hasta un día normal se sienta especial 🌷</p>
+        </div>
+        <div class="motivo">
+          <h3>Tu compañía 🫂</h3>
+          <p>Contigo el tiempo pasa distinto, más bonito 🌙</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ultimo" aria-labelledby="t-galeria">
+      <h2 class="te-amo" id="t-galeria">Mi fresita</h2>
+      <div class="galeria" id="galeria" role="region" aria-roledescription="carrusel" aria-label="Fotos de mi fresita">
+        <div class="g-marco">
+        <div class="g-visor" id="g-visor">
+          <figure class="g-diapo" style="--img:url(imagen1.jpg)"><img src="imagen1.jpg" alt="Foto 1 de 6"></figure>
+          <figure class="g-diapo" style="--img:url(imagen2.jpg)"><img src="imagen2.jpg" alt="Foto 2 de 6" loading="lazy"></figure>
+          <figure class="g-diapo" style="--img:url(imagen3.jpg)"><img src="imagen3.jpg" alt="Foto 3 de 6" loading="lazy"></figure>
+          <figure class="g-diapo" style="--img:url(imagen4.png)"><img src="imagen4.png" alt="Foto 4 de 6" loading="lazy"></figure>
+          <figure class="g-diapo" style="--img:url(imagen5.png)"><img src="imagen5.png" alt="Foto 5 de 6" loading="lazy"></figure>
+          <figure class="g-diapo" style="--img:url(imagen6.png)"><img src="imagen6.png" alt="Foto 6 de 6" loading="lazy"></figure>
+          <button class="g-flecha g-prev" id="g-prev" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="g-flecha g-sig" id="g-sig" type="button" aria-label="Foto siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+        <div class="g-progreso" aria-hidden="true"><span id="g-progreso"></span></div>
+        </div>
+        <div class="g-miniaturas" id="g-miniaturas">
+          <button type="button" aria-label="Ver foto 1"><img src="imagen1.jpg" alt=""></button>
+          <button type="button" aria-label="Ver foto 2"><img src="imagen2.jpg" alt=""></button>
+          <button type="button" aria-label="Ver foto 3"><img src="imagen3.jpg" alt=""></button>
+          <button type="button" aria-label="Ver foto 4"><img src="imagen4.png" alt=""></button>
+          <button type="button" aria-label="Ver foto 5"><img src="imagen5.png" alt=""></button>
+          <button type="button" aria-label="Ver foto 6"><img src="imagen6.png" alt=""></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<section class="universo" id="universo" role="dialog" aria-modal="true" aria-label="El universo" hidden>
+  <canvas id="cosmos" aria-hidden="true"></canvas>
+  <div class="u-cabecera">
+    <span class="u-titulo">El universo</span>
+    <button class="u-cerrar" id="u-cerrar" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      <span>Volver</span>
+    </button>
+  </div>
+  <div class="u-centro">
+    <p class="u-frase" id="u-frase" aria-live="polite"></p>
+    <div class="u-puntos" id="u-puntos"></div>
+  </div>
+  <p class="u-pista">Toca la pantalla para ver otra frase</p>
+</section>
+
+<button class="musica" id="btn-musica" type="button" aria-pressed="false">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v11.2A3.5 3.5 0 1 0 11 17.4V7.3l8-1.6v6.5a3.5 3.5 0 1 0 2 3.2V3z"/></svg>
+  <span id="musica-texto">Activar música</span>
+</button>
+
+<audio id="cancion" src="cancion.mp3" loop preload="auto"></audio>
+<audio id="saturno" src="saturno.mp3" preload="auto"></audio>
+
+<script src="script.js?v=11"></script>
+</body>
+</html>
